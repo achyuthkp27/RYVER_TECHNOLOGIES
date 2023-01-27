@@ -7458,7 +7458,6 @@ h6,
 
 .page-header {
   height: 400px;
-  margin-bottom: 90px;
 }
 
 @media (max-width: 991.98px) {
@@ -7928,4 +7927,10 @@ h6,
 
 #supporters img {
   transition: all 0.4s ease-in-out;
+}
+
+/* contact box */
+.contact-box {
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
 }
