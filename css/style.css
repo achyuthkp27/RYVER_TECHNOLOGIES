@@ -99,7 +99,6 @@ a {
 
 a:hover {
   color: var(--primary);
-  text-decoration: underline;
 }
 
 a:not([href]):not([class]) {
@@ -2709,6 +2708,7 @@ fieldset:disabled a.btn {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
+  background: var(--dark);
   color: var(--primary);
   text-decoration: none;
 }
@@ -7627,7 +7627,9 @@ h6,
   padding: 15px;
 }
 .courses .course-content h3 {
-  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
   font-size: 20px;
 }
 .courses .course-content h3 a {
@@ -7635,7 +7637,7 @@ h6,
   transition: 0.3s;
 }
 .courses .course-content h3 a:hover {
-  color: #5fcf80;
+  color: var(--primary);
 }
 .courses .course-content p {
   font-size: 14px;
@@ -7804,7 +7806,7 @@ h6,
 }
 
 .why-us .accordion-list a.collapsed {
-  color: var(--light);
+  color: var(--primary);
 }
 
 .why-us .accordion-list a.collapsed:hover {
