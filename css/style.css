@@ -198,7 +198,6 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none;
 }
 
 svg {
@@ -6153,6 +6152,24 @@ a.close.disabled {
   margin: 0.25rem;
 }
 
+.company-text {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 600;
+  background-color: var(--dark);
+  padding: 10px 0;
+  letter-spacing: 15px;
+}
+.company-text h4 {
+  color: var(--primary);
+}
+.company-text h4 span {
+  color: var(--light);
+  text-align: center;
+}
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -10364,12 +10381,21 @@ h6,
 # Courses
 --------------------------------------------------------------*/
 .courses .course-item {
-  border-radius: 5px;
-  border: 1px solid #eef0ef;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
+  /* box-shadow: 
+    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset; */
+  border-radius: 50px;
 }
 
+.courses .course-item .img-border {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
 .courses {
   padding-bottom: 70px;
+  box-shadow: 20px 20px 50px var(--dark), -30px -30px 60px var(--dark);
 }
 .courses .course-content {
   padding: 15px;
@@ -10379,7 +10405,7 @@ h6,
   font-size: 20px;
 }
 .courses .course-content h3 a {
-  color: #37423b;
+  color: #fff;
   transition: 0.3s;
 }
 .courses .course-content h3 a:hover {
@@ -10387,11 +10413,14 @@ h6,
 }
 .courses .course-content p {
   font-size: 14px;
-  color: #777777;
+  color: var(--light);
 }
 .courses .course-content h4 {
+  box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 0.2) inset,
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.1) inset;
+  border-radius: 20px;
   font-size: 14px;
-  background: #5fcf80;
+  background: var(--primary);
   padding: 7px 14px;
   color: #fff;
   margin: 0;
@@ -10400,11 +10429,11 @@ h6,
   margin: 0;
   font-weight: 700;
   font-size: 18px;
-  color: #37423b;
+  color: var(--primary);
 }
 .courses .trainer {
   padding-top: 15px;
-  border-top: 1px solid #eef0ef;
+  border-top: 1px solid var(--primary);
 }
 .courses .trainer .trainer-profile img {
   max-width: 50px;
@@ -10414,7 +10443,7 @@ h6,
   padding-left: 10px;
   font-weight: 600;
   font-size: 16px;
-  color: #5a6c60;
+  color: var(--primary);
 }
 .courses .trainer .trainer-rank {
   font-size: 18px;
