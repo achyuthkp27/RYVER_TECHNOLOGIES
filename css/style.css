@@ -8020,20 +8020,11 @@ h6,
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  padding: 0 30px;
   outline: none;
   cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
 }
 
 .faq .faq-list .icon-show,
