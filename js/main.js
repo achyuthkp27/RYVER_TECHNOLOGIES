@@ -45,6 +45,22 @@
     portfolioIsotope.isotope({ filter: $(this).data("filter") });
   });
 
+  if ($(".slide-one-item").length > 0) {
+    $(".slide-one-item").owlCarousel({
+      items: 1,
+      autoplay: true,
+      smartSpeed: 1000,
+      margin: 30,
+      dots: false,
+      loop: true,
+      nav: true,
+      navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+      ],
+    });
+  }
+
   // Team carousel
   $(".team-carousel").owlCarousel({
     autoplay: true,
@@ -120,5 +136,4 @@
       return false;
     });
   };
-
 })(jQuery);

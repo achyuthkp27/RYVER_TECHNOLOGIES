@@ -7552,3 +7552,141 @@ h6,
     padding: 0;
   }
 }
+
+/* home page*/
+.site-blocks-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+.site-blocks-cover.overlay {
+  position: relative;
+}
+.site-blocks-cover.overlay:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.site-blocks-cover,
+.site-blocks-cover > .container > .row {
+  min-height: 600px;
+  height: calc(100vh);
+}
+.site-blocks-cover h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover h1 {
+    font-size: 4rem;
+  }
+}
+.site-blocks-cover .sub-text {
+  font-size: 2rem;
+  color: var(--light);
+  font-weight: 300;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover .sub-text,
+  .site-blocks-cover .intro .heading {
+    color: var(--white);
+    font-size: 1rem;
+    background: var(--dark);
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
+    border-radius: 10px;
+  }
+}
+.site-blocks-cover .img-wrap {
+  position: absolute;
+  z-index: -1;
+  width: calc(100% - 50%);
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  right: 50%;
+  min-height: 600px;
+  overflow: hidden;
+  border-bottom-right-radius: 200px;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover .img-wrap {
+    width: 100%;
+    right: 0%;
+    top: 0;
+  }
+  .site-blocks-cover .img-wrap .hero-slider:before {
+    position: absolute;
+    content: "";
+    opacity: 0.5;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.site-blocks-cover .img-wrap .slide {
+  height: 100vh;
+  position: relative;
+}
+.site-blocks-cover .img-wrap .slide img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.site-blocks-cover .intro {
+  z-index: 3;
+  position: relative;
+}
+.site-blocks-cover .intro .heading {
+  margin-left: -150px;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover .intro .heading {
+    margin-left: 0;
+  }
+}
+.site-blocks-cover .intro .text {
+  padding-left: 50px;
+}
+@media (max-width: 991.98px) {
+  .site-blocks-cover .intro .text {
+    padding-left: 0;
+  }
+}
+
+.site-menu-toggle .menu-text {
+  position: relative;
+  top: -6px;
+  text-transform: uppercase;
+}
+
+.hero-slider .owl-nav {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+  z-index: 100;
+}
+.hero-slider .owl-nav .owl-prev,
+.hero-slider .owl-nav .owl-next {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: var(--dark);
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
