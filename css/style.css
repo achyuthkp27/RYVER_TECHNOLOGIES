@@ -7595,9 +7595,12 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-  .site-blocks-cover .sub-text,
-  .site-blocks-cover .intro .heading {
-    color: #000;
+  .site-blocks-cover .intro .bg-change .sub-text{
+    color: #fff;
+    background-color: var(--dark);
+    font-size: 1.5rem;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
   }
 }
 .site-blocks-cover .img-wrap {
