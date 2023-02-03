@@ -7034,6 +7034,7 @@ h6,
 
 .testimonial-carousel .owl-item.center .testimonial-item::before {
   position: absolute;
+  color: white;
   content: "";
   top: 45px;
   left: -30px;
@@ -7350,6 +7351,7 @@ h6,
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
   background: var(--primary);
+  box-sizing: border-box;
 }
 
 .services .icon-box .icon {
@@ -7472,7 +7474,7 @@ h6,
   padding: 0;
 }
 
-/*post-autohr-info*/
+/*post-author-info*/
 .post-author-info img {
   float: left;
   height: 145px;
@@ -7483,7 +7485,7 @@ h6,
 }
 
 /*--------------------------------------------------------------
-# Frequently Asked Questions
+# More details section
 --------------------------------------------------------------*/
 .faq .faq-list {
   padding: 0 100px;
@@ -7595,7 +7597,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-  .site-blocks-cover .intro .bg-change .sub-text{
+  .site-blocks-cover .intro .bg-change .sub-text {
     color: #fff;
     background-color: var(--dark);
     font-size: 1.5rem;
@@ -7688,4 +7690,88 @@ h6,
   color: var(--primary);
   margin-bottom: 10px;
   font-size: 1.3rem;
+}
+
+/*--------------------------------------------------------------
+# Team about Section
+--------------------------------------------------------------*/
+.about .about-img {
+  position: relative;
+  margin: 60px 0 0 60px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.about .about-img:before {
+  position: absolute;
+  inset: -60px 0 0 -60px;
+  z-index: -1;
+  content: "";
+  background: url("../img/about-bg.png") top left;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 575px) {
+  .about .about-img {
+    margin: 30px 0 0 30px;
+  }
+  .about .about-img:before {
+    inset: -30px 0 0 -30px;
+  }
+}
+
+.about h3 {
+  color: var(--primary);
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about h3 {
+    font-size: 28px;
+  }
+}
+
+.about .nav-pills {
+  border-bottom: 1px solid rgba(var(--secondary), 0.2);
+}
+
+.about .nav-pills li + li {
+  margin-left: 40px;
+}
+
+.about .nav-link {
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary);
+  padding: 12px 0;
+  margin-bottom: -2px;
+  border-radius: 0;
+}
+
+.about .nav-link.active {
+  color: var(--primary);
+  background: none;
+  border-bottom: 3px solid var(--primary);
+}
+
+@media (max-width: 575px) {
+  .about .nav-link {
+    font-size: 16px;
+  }
+}
+
+.about .tab-content h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.about .tab-content i {
+  font-size: 22px;
+  line-height: 0;
+  margin-right: 8px;
+  color: var(--primary);
 }
