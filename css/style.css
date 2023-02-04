@@ -2500,7 +2500,7 @@ fieldset:disabled a.btn {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 600;
-  color: #6c7293;
+  color: var(--light);
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -6730,9 +6730,18 @@ a.text-danger:focus {
   color: #f4f5f8 !important;
 }
 
+.text-light-main {
+  color: var(--light) !important;
+}
+
 a.text-light:hover,
 a.text-light:focus {
   color: #c5cbda !important;
+}
+
+a.text-light-main:hover,
+a.text-light-main:focus {
+  color: var(--primary) !important;
 }
 
 .text-dark {
@@ -6746,15 +6755,15 @@ a.text-dark:focus {
 
 .line-1 {
   height: 1px;
-  background: #6c7293 !important;
+  background: var(--light) !important;
 }
 
 .text-body {
-  color: #6c7293 !important;
+  color: var(--light) !important;
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: var(--light) !important;
 }
 
 .text-black-50 {
@@ -6928,7 +6937,7 @@ h6,
   font-weight: 600;
   text-transform: uppercase;
   padding: 45px 15px;
-  color: #6c7293;
+  color: var(--light);
   outline: none;
 }
 
