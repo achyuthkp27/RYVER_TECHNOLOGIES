@@ -136,4 +136,7 @@
       return false;
     });
   };
+
+  document.getElementById("contact-details-js").innerHTML +=
+    '<div class="container-fluid py-5 bg-primary"> <div class="container pb-3"> <div class="row"> <div class="col-lg-4 mb-2"> <div class="d-flex align-items-center bg-dark rounded mb-4 px-5 contact-box" style="height: 150px;"> <i class="fa fa-3x fa-map-marker-alt text-primary mr-3"></i> <div class="d-flex flex-column"> <h5 class="text-uppercase text-primary">Our Office</h5> <p class="m-0 text-light">BS Saroja Nilayam FN.401,Bhagya Nagar colony KPHB, Hyderabad-500072</p> </div> </div> </div> <div class="col-lg-4 mb-2"> <div class="d-flex align-items-center bg-dark rounded mb-4 px-5 contact-box" style="height: 150px;"> <i class="fa fa-3x fa-envelope-open text-primary mr-3"></i> <div class="d-flex flex-column"> <h5 class="text-uppercase text-primary">Email Us</h5> <p class="m-0 text-light">tech.ryver@gmail.com</p> </div> </div> </div> <div class="col-lg-4 mb-2"> <div class="d-flex align-items-center bg-dark rounded mb-4 px-5 contact-box" style="height: 150px;"> <i class="fas fa-3x fa-phone-alt text-primary mr-3"></i> <div class="d-flex flex-column"> <h5 class="text-uppercase text-primary">Call Us</h5> <p class="m-0 text-light">+012 345 6789</p> </div> </div> </div> </div> </div> </div>';
 })(jQuery);
