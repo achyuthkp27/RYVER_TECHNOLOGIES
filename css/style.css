@@ -7239,43 +7239,15 @@ h6 {
 }
 
 .ryver-tech-course .chef-member .member-img:after {
+  display: block;
   position: absolute;
   content: "";
   left: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 1;
-}
-
-.ryver-tech-course .chef-member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-
-.ryver-tech-course .chef-member .social a {
-  transition: color 0.3s;
-  color: rgba(55, 55, 63, 0.4);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.ryver-tech-course .chef-member .social a:hover {
-  color: rgba(55, 55, 63, 0.9);
-}
-
-.ryver-tech-course .chef-member .social i {
-  font-size: 18px;
 }
 
 .ryver-tech-course .chef-member .member-info {
@@ -7314,39 +7286,17 @@ h6 {
   opacity: 1;
 }
 
-/* .ryver-tech-course .chef-member .btn-get-started { */
-/* font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
+.ryver-tech-course .chef-member .actions a {
+  text-transform: uppercase;
   display: inline-block;
-  padding: 14px 40px;
-  border-radius: 50px;
-  transition: 0.3s;
-  color: var(--white);
-  background: var(--primary);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.ryver-tech-course .chef-member .btn-get-started:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.ryver-tech-course .chef-member .btn-watch-video {
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 2px;
   transition: 0.5s;
-  margin-left: 25px;
-  color: var(--primary);
-  font-weight: 600;
+  margin: 10px;
 }
-
-.ryver-tech-course .chef-member .btn-watch-video i {
-  margin-right: 8px;
-}
-
-.ryver-tech-course .chef-member .btn-watch-video:hover {
-  color: var(--gray-dark);
-} */
 
 .ryver-tech-course .chef-member .btn-get-started {
   background: #00a469;
@@ -7369,16 +7319,4 @@ h6 {
   background: var(--primary);
   color: #fff;
   border: 2px solid var(--primary);
-}
-
-.ryver-tech-course .chef-member .actions a {
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 8px 10px;
-  border-radius: 2px;
-  transition: 0.5s;
-  margin: 10px;
 }
