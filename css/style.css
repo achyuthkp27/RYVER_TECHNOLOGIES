@@ -2435,12 +2435,16 @@ fieldset:disabled a.btn {
   text-align: center;
 }
 .navbar {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -6369,7 +6373,6 @@ h6 {
 }
 .courses {
   padding-bottom: 70px;
-  box-shadow: 20px 20px 50px var(--dark), -30px -30px 60px var(--dark);
 }
 .courses .course-content {
   padding: 15px;
@@ -6381,7 +6384,7 @@ h6 {
   font-size: 20px;
 }
 .courses .course-content h3 a {
-  color: #fff;
+  color: var(--gray-dark);
   transition: 0.3s;
 }
 .courses .course-content h3 a:hover {
@@ -6497,9 +6500,7 @@ h6 {
   border-radius: 20px;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
-  background: var(--primary);
   padding: 20px;
-  background: var(--dark);
 }
 .why-us .accordion-list a {
   text-decoration: none;
@@ -6531,7 +6532,7 @@ h6 {
   display: none;
 }
 .why-us .accordion-list a.collapsed {
-  color: var(--primary);
+  color: var(--dark);
 }
 .why-us .accordion-list a.collapsed:hover {
   color: var(--primary);
@@ -6933,4 +6934,247 @@ h6 {
   line-height: 0;
   margin-right: 8px;
   color: var(--primary);
+}
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.events {
+  /* background: url(../img/hero-bg.jpg) center center no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+.events::before {
+  content: "";
+  /* background-color: rgba(12, 11, 10, 0.8); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.events .section-title h2 {
+  color: var(--primary);
+}
+
+.events .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .events {
+    background-attachment: fixed;
+  }
+}
+
+.events .events-carousel {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+}
+
+.events .event-item {
+  color: var(--gray-dark);
+}
+
+.events .event-item h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--primary);
+}
+
+.events .event-item .price {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.events .event-item .price span {
+  border-bottom: 2px solid var(--primary);
+}
+
+.events .event-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events .event-item ul li {
+  padding-bottom: 10px;
+}
+
+.events .event-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--primary);
+}
+
+.events .event-item p:last-child {
+  margin-bottom: 0;
+}
+
+.events .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.events .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.events .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
+
+/*--------------------------------------------------------------
+# ryver-hero Section
+--------------------------------------------------------------*/
+.ryver-hero {
+  width: 100%;
+  position: relative;
+  padding: 60px 0 0 0;
+  background: #e6e7e7;
+}
+
+@media (min-width: 1365px) {
+  .ryver-hero {
+    background-attachment: fixed;
+  }
+}
+
+.ryver-hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.ryver-hero p {
+  color: var(--gray-dark);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.ryver-hero .btn-get-started {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: var(--white);
+  background: var(--primary);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.ryver-hero .btn-get-started:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.ryver-hero .btn-watch-video {
+  font-size: 22px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.ryver-hero .btn-watch-video i {
+  margin-right: 8px;
+}
+
+.ryver-hero .btn-watch-video:hover {
+  color: var(--gray-dark);
+}
+
+@media (max-width: 640px) {
+  .ryver-hero h2 {
+    font-size: 36px;
+  }
+
+  .ryver-hero .btn-get-started,
+  .ryver-hero .btn-watch-video {
+    font-size: 14px;
+  }
+}
+
+.ryver-hero .icon-boxes {
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .ryver-hero .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: #fff;
+  }
+}
+
+.ryver-hero .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  color: var(--light);
+  background: var(--primary);
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.ryver-hero .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.ryver-hero .icon-box .title a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.ryver-hero .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 28px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*--------------------------------------------------------------
+# about-ryver Us Section
+--------------------------------------------------------------*/
+.about-ryver .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-ryver .content ul li {
+  padding: 0 0 10px 30px;
+  position: relative;
+}
+
+.about-ryver .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--primary);
+}
+
+.about-ryver .content p:last-child {
+  margin-bottom: 0;
 }
