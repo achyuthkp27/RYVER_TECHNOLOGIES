@@ -5138,24 +5138,38 @@ h6 {
   }
 }
 
+.testimonial-carousel .owl-dots {
+  margin-top: 30px;
+  text-align: center;
+}
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #bdbdbf;
+  transition: 0.5s;
+}
+.testimonial-carousel .owl-dot.active {
+  width: 40px;
+  background: var(--primary);
+}
 .testimonial-carousel .owl-item img {
   width: 80px;
   height: 80px;
 }
-
 .testimonial-carousel .owl-item .testimonial-item {
   opacity: 0.5;
 }
-
 .testimonial-carousel .owl-item.center .testimonial-item {
   background: #222429;
   opacity: 1;
 }
-
 .testimonial-carousel .owl-item.center .testimonial-item h5 {
   color: var(--primary);
 }
-
 .testimonial-carousel .owl-item.center .testimonial-item::before {
   position: absolute;
   color: #fff;
@@ -5168,7 +5182,6 @@ h6 {
   border-radius: 4px;
   z-index: -1;
 }
-
 .courses .course-item {
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
@@ -5743,7 +5756,8 @@ h6 {
   z-index: 100;
 }
 
-.hero-slider .owl-nav .owl-next {
+.hero-slider .owl-nav .owl-next,
+.hero-slider .owl-nav .owl-prev {
   width: 50px;
   height: 50px;
   text-align: center;
