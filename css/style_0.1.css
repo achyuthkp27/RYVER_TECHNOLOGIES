@@ -1342,8 +1342,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; */
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(0, 164, 105, 0.3);
 }
@@ -5517,7 +5517,7 @@ h6 {
 }
 
 .portfolio-details .portfolio-details-slider {
-    position: relative;
+  position: relative;
 }
 
 .portfolio-details .portfolio-info {
@@ -6341,7 +6341,7 @@ h6 {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -6395,7 +6395,7 @@ h6 {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--primary);
   border: 0;
   padding: 10px 24px;
@@ -6404,7 +6404,7 @@ h6 {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: var(--primary);
 }
 
