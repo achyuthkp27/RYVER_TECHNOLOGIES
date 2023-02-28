@@ -59,7 +59,7 @@
             <h6 class="text-uppercase m-0">Tibco bw 5</h6>
         </div>
     </div>
-    <div id="portfolio-details" class="portfolio-details bg-dark">
+    <section id="portfolio-details" class="portfolio-details">
         <div class="container">
             <div class="section-title text-uppercase">
                 <h2>Course</h2>
@@ -72,7 +72,7 @@
                             <div class="img-fluid"><img src="img/Tibco-course.png" alt=""></div><a
                                 href="https://wa.me/919380515942?text=Hello%2C%20I%20hope%20this%20message%20finds%20you%20well.%20I%20am%20interested%20in%20learning%20more%20about%20the%20Tibco%20BW%205%20Course.%20Could%20you%20please%20provide%20me%20with%20some%20more%20information%20such%20as%20the%20course%20duration%2C%20syllabus%2C%20and%20fee%20structure?%20Thank%20you%20for%20your%20time%20and%20assistance.%0A%0ABest%20regards%2C%0A[Your%20Name]"
                                 class="btn btn-primary text-uppercase mt-4 py-3 px-5 contact-box">
-                                <h4>Enroll Course</h4>
+                                Enroll Course
                             </a>
                         </div>
                     </div>
@@ -104,8 +104,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="faq" class="faq bg-dark">
+    </section>
+    <section id="faq" class="faq">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>Course Details</h2>
@@ -234,24 +234,26 @@
                 </ul>
             </div>
         </div>
-        <section class="container">
-            <div class="post-author-info bg-dark align-items-center">
-                <div class="section-title">
-                    <h2>Trainer</h2>
-                    <p>Instructor</p>
-                </div>
-                <div class="img-fluid"><img src="RYVER_LOGO.png" alt="image"></div>
-                <h4 class="text-primary">SAKETH</h4>
-                <p class="text-light mb-4">Discover a world of opportunity and take your career to the next level with
-                    our engaging and interactive course, tailored to provide you with the essential tools and practical
-                    insights you need to excel in [field/industry]</p><a href=""
-                    class="btn btn-primary text-uppercase mt-1 py-3 px-5 contact-box">
-                    <h4>Enroll Course</h4>
-                </a>
+    </section>
+    <section class="container contact-box post-author">
+        <div class="post-author-info align-items-center">
+            <div class="section-title">
+                <h2>Trainer</h2>
+                <p>Instructor</p>
             </div>
-        </section>
-    </div>
-    <section class="courses bg-dark" id="courses">
+            <div class="img-fluid"><img src="RYVER_LOGO.png" alt="image"></div>
+            <h4 class="text-primary">SAKETH</h4>
+            <p class="mb-4">Discover a world of opportunity and take your career to the next level with
+                our engaging and interactive course, tailored to provide you with the essential tools and
+                practical
+                insights you need to excel in [field/industry]</p><a href=""
+                class="btn btn-primary text-uppercase mt-1 py-3 px-5 contact-box">
+                <h4>Enroll Course</h4>
+            </a>
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>Explore</h2>
@@ -301,7 +303,81 @@
             </div>
         </div>
     </section>
-    <div id="contact-details-js"></div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up"">
+  
+      <div class=" section-title">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="info-box">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <h3>Our Address</h3>
+                            <p>BS Saroja Nilayam Flat number 401 Near <br> sai baba temple ,Bhagya Nagar colony KPHB
+                                500072, Hyderabad</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box mt-4">
+                            <i class="fa fa-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>tech.ryver@gmail.com<br>tech.ryver@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box mt-4">
+                            <i class="fa fa-phone-alt"></i>
+                            <h3>Call Us</h3>
+                            <p>+91 93805 15942<br>+91 93805 15942</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+
+        </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
     <div class="footer">
         <div class="container-fluid text-white-50 py-5 px-sm-3 px-md-5">
             <div class="row pt-5">
